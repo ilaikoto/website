@@ -1,0 +1,7 @@
+{
+  "github":   { "url": "https://github.com/ilaikoto",            "label": "GitHub",               "icon": "github" },
+  "twitter":  { "url": "https://x.com/ilaikoto",                "label": "X",                    "icon": "twitter" },
+  "linkedin": { "url": "https://linkedin.com/company/ilaikoto",  "label": "LinkedIn",             "icon": "linkedin" },
+  "facebook": { "url": "https://facebook.com/ilaikoto.com",     "label": "Facebook",             "icon": "facebook" },
+  "email":    { "url": "mailto:contact@ilaikoto.com",           "label": "contact@ilaikoto.com", "icon": "mail" }
+}

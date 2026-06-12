@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dev",
+    "icon": "code-2",
+    "title_key": "service_dev_title",
+    "desc_key": "service_dev_desc"
+  },
+  {
+    "id": "devops",
+    "icon": "git-branch",
+    "title_key": "service_devops_title",
+    "desc_key": "service_devops_desc"
+  },
+  {
+    "id": "security",
+    "icon": "shield-check",
+    "title_key": "service_security_title",
+    "desc_key": "service_security_desc"
+  },
+  {
+    "id": "ai",
+    "icon": "cpu",
+    "title_key": "service_ai_title",
+    "desc_key": "service_ai_desc"
+  }
+]

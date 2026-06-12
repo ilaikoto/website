@@ -1,0 +1,55 @@
+/* ============================================================
+   theme.css — ILAIKOTO color tokens
+   X.com / SpaceX palette: pure B&W + #1D9BF0 accent
+   ============================================================ */
+
+:root,
+html.light {
+  --color-bg:             #FFFFFF;
+  --color-bg-surface:     #F7F9F9;
+  --color-bg-hover:       #EFF3F4;
+  --color-text-primary:   #000000;
+  --color-text-secondary: #536471;
+  --color-text-tertiary:  #8B98A5;
+  --color-border:         #CFD9DE;
+  --color-border-subtle:  #EFF3F4;
+  --color-accent:         #1D9BF0;
+  --color-accent-hover:   #1A8CD8;
+  --color-accent-light:   #E8F4FE;
+  --color-accent-text:    #FFFFFF;
+}
+
+html.dark {
+  --color-bg:             #000000;
+  --color-bg-surface:     #16181C;
+  --color-bg-hover:       #1D1F23;
+  --color-text-primary:   #E7E9EA;
+  --color-text-secondary: #71767B;
+  --color-text-tertiary:  #3E4144;
+  --color-border:         #2F3336;
+  --color-border-subtle:  #1D1F23;
+  --color-accent:         #1D9BF0;
+  --color-accent-hover:   #1A8CD8;
+  --color-accent-light:   rgba(29, 155, 240, 0.10);
+  --color-accent-text:    #FFFFFF;
+}
+
+/* System preference fallback (before JS runs) */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --color-bg:             #000000;
+    --color-bg-surface:     #16181C;
+    --color-bg-hover:       #1D1F23;
+    --color-text-primary:   #E7E9EA;
+    --color-text-secondary: #71767B;
+    --color-text-tertiary:  #3E4144;
+    --color-border:         #2F3336;
+    --color-border-subtle:  #1D1F23;
+    --color-accent:         #1D9BF0;
+    --color-accent-hover:   #1A8CD8;
+    --color-accent-light:   rgba(29, 155, 240, 0.10);
+    --color-accent-text:    #FFFFFF;
+  }
+}
+
+/* meta theme-color JS target */

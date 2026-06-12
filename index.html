@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ILAIKOTO — SaaS & IT Consulting. Software development, DevOps, Cybersecurity, and AI Automation." />
+  <meta property="og:title" content="ILAIKOTO — Build, secure, and scale." />
+  <meta property="og:description" content="End-to-end software development, DevOps, cybersecurity, and AI automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ilaikoto.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ILAIKOTO" />
+  <meta name="twitter:description" content="SaaS & IT Consulting — Software, DevOps, Cybersecurity, AI." />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="canonical" href="https://ilaikoto.com" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+
+  <title>ILAIKOTO — Build, secure, and scale.</title>
+
+  <!-- Prevent FOUC: apply theme class before paint -->
+  <script>
+    (function() {
+      var stored = localStorage.getItem('ilaikoto-theme');
+      var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      var theme = stored || sys;
+      document.documentElement.className = theme;
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar" role="banner">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav-logo" aria-label="ILAIKOTO home">
+        <img class="theme-logo" src="assets/logo.dark.svg" alt="ILAIKOTO" />
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#values"   data-i18n="nav_about">About</a>
+        <a href="#contact"  data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="nav-right">
+        <button class="btn-lang" id="btn-lang" aria-label="Switch language">FR</button>
+
+        <button class="btn-theme" id="btn-theme" aria-label="Toggle color theme">
+          <!-- Sun icon (shown in dark mode to switch to light) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode to switch to dark) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_cta">Get in touch</a>
+
+        <!-- Hamburger -->
+        <button class="btn-hamburger" id="btn-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <nav class="mobile-menu-links" aria-label="Mobile navigation links">
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#values"   data-i18n="nav_about">About</a>
+      <a href="#contact"  data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="mobile-menu-actions">
+      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav_cta">Get in touch</a>
+    </div>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow" data-i18n="hero_eyebrow">SaaS & IT Consulting</span>
+        <h1 class="hero-headline" data-i18n="hero_headline">Build, secure, and scale — without limits.</h1>
+        <p class="hero-sub" data-i18n="hero_subheadline">ILAIKOTO delivers end-to-end software development, DevOps, cybersecurity, and AI automation to companies that need to move fast and stay secure.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_cta_primary">Start a project</a>
+          <a href="#services" class="btn btn-secondary" data-i18n="hero_cta_secondary">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow" data-i18n="services_eyebrow">What we do</span>
+          <h2 data-i18n="services_title">Every layer of your stack, covered.</h2>
+          <p data-i18n="services_subtitle">From idea to infrastructure — we build it, secure it, and keep it running.</p>
+        </div>
+        <div class="services-grid stagger-children" id="services-grid">
+          <!-- Rendered by main.js from services.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPS -->
+    <section id="values" class="section">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <h2 data-i18n="values_title">Why teams choose ILAIKOTO</h2>
+        </div>
+        <div class="values-grid stagger-children">
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <p class="value-label" data-i18n="value1_label">Expert team</p>
+              <p class="value-text"  data-i18n="value1_text">Senior engineers and security specialists across every discipline we offer.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <div>
+              <p class="value-label" data-i18n="value2_label">End-to-end delivery</p>
+              <p class="value-text"  data-i18n="value2_text">Strategy, architecture, build, and ops — under one roof, one point of contact.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div>
+              <p class="value-label" data-i18n="value3_label">Always-on support</p>
+              <p class="value-text"  data-i18n="value3_text">We stay available after launch. Issues don't keep business hours and neither do we.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section id="cta-banner">
+      <div class="container">
+        <div class="cta-banner-inner reveal">
+          <h2 data-i18n="cta_title">Ready to build something that lasts?</h2>
+          <p data-i18n="cta_subtitle">Let's talk about your project. No commitment, no boilerplate pitch.</p>
+          <a href="#contact" class="btn btn-primary" data-i18n="cta_button">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info reveal">
+            <span class="section-eyebrow" data-i18n="contact_eyebrow">Get in touch</span>
+            <h2 data-i18n="contact_title">Tell us about your project.</h2>
+            <p data-i18n="contact_subtitle">We'll get back to you within one business day.</p>
+          </div>
+
+          <form class="contact-form reveal reveal-delay-2" id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="form-name" data-i18n="form_name_label">Full name</label>
+              <input type="text" id="form-name" name="name" autocomplete="name"
+                     data-i18n-placeholder="form_name_placeholder" placeholder="Jean Dupont" required />
+              <span class="form-error-msg" id="form-name-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" data-i18n="form_email_label">Email address</label>
+              <input type="email" id="form-email" name="email" autocomplete="email"
+                     data-i18n-placeholder="form_email_placeholder" placeholder="jean@company.com" required />
+              <span class="form-error-msg" id="form-email-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" data-i18n="form_subject_label">Subject</label>
+              <input type="text" id="form-subject" name="subject"
+                     data-i18n-placeholder="form_subject_placeholder" placeholder="What can we help with?" required />
+              <span class="form-error-msg" id="form-subject-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" data-i18n="form_message_label">Message</label>
+              <textarea id="form-message" name="message" rows="5"
+                        data-i18n-placeholder="form_message_placeholder"
+                        placeholder="Tell us about your project, timeline, and goals." required></textarea>
+              <span class="form-error-msg" id="form-message-error" role="alert"></span>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary" data-i18n="form_submit">Send message</button>
+            </div>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img class="theme-logo footer-logo" src="assets/logo.dark.svg" alt="ILAIKOTO" />
+          <p class="footer-tagline" data-i18n="footer_tagline">Software. Security. Scale.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_links_title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#services" data-i18n="footer_link_services">Services</a></li>
+            <li><a href="#values"   data-i18n="footer_link_about">About</a></li>
+            <li><a href="#contact"  data-i18n="footer_link_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_social_title">Follow us</h4>
+          <div class="footer-social" id="footer-social">
+            <!-- Rendered by main.js from contacts.json -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="footer-year"></span> ILAIKOTO. <span data-i18n="footer_copyright">All rights reserved.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (ES modules) -->
+  <script type="module" src="scripts/main.js"></script>
+
+</body>
+</html>
